@@ -81,7 +81,7 @@ districts = ['Bhojpur',
 
 def read_csv(file_name):
     """Reads the csv files"""
-    data = open('CSV_files/' + file_name, 'r').read().split("\n")
+    data = open('CSV_files/' + file_name, 'r').read().strip("\n").split("\n")
     return data
 
 
